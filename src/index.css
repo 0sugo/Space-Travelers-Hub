@@ -29,3 +29,17 @@ code {
     'Courier New',
     monospace;
 }
+/* .nav-bar */
+.flexer {
+  display:flex;
+}
+.nav-bar{
+  justify-content: space-between;
+
+}
+.nav-bar a {
+  text-decoration: none;
+}
+.nav-bar a.active{
+  text-decoration: underline;
+}
