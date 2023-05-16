@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+<!-- TABLE OF CONTENTS -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📗 Table of Contents
 
-## Available Scripts
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[ Space-travelers-hub \] ](#--space-travelers-hub--)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-In the project directory, you can run:
+<!-- PROJECT DESCRIPTION -->
 
-### `npm start`
+# 📖 [ Space-travelers-hub ] <a name="about-project"></a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**[ Space-travelers-hub ]** is a web application for a company that provides commercial and scientific space travel services. It allows users to book rockets and join selected space missions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Built With <a name="built-with"></a>
 
-### `npm test`
+### Tech Stack <a name="tech-stack"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+  <summary>Client</summary>
+   <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li></li>    
+  </ul>
+</details>
 
-### `npm run build`
+<details>
+<summary>Technologies</summary>
+  <ul>
+    <li><a href="https://create-react-app.dev">React.js</a></li>
+  </ul>
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- Features -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Key Features <a name="key-features"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **[Display_a_list_of_available_spaceX_rockets]**
+- **[Allow_users_to_reserve_slot]**
+- **[Allow_users_to__cancel_reserved_slot]**
+- **[Displays_a_list_of_current_missions]**
+- **[Displays_mission_status]**
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- GETTING STARTED -->
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 💻 Getting Started <a name="getting-started"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> To get a local copy up and running, follow these steps.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+In order to run this project you need:
+- A code editor (preferably VSCode)
+- A browser
+- Node.js (to run javascript files locally)
+- LiveServer (to load javascript modules)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Setup
+Clone this repository to your desired folder:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Open git bash on local computer
+- clone the repo with: 
 
-### Code Splitting
+git clone from ```https://github.com/0sugo/Space-Travelers-Hub.git```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Install
 
-### Analyzing the Bundle Size
+Install this project with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- run ```cd Space-Travelers-Hub ``` to enter the project folder
+- run ```npm i``` to install all dependencies
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Usage
 
-### Advanced Configuration
+To run the project, execute the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- run ```npm start``` to launch the application
+- enjoy application
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- AUTHORS -->
 
-### `npm run build` fails to minify
+## 👥 Authors <a name="authors"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👤 **JOSECK OSUGO**
+
+- GitHub: [0sugo](https://github.com/0sugo)
+- Twitter: [@0sugo5](https://twitter.com/osugo5)
+- LinkedIn: [Joseck Osugo](https://www.linkedin.com/in/joseck-osugo-873b0618a/)
+
+👤 **MAURICE NDONYI**
+
+- GitHub: [NdonyiMaurice](https://github.com/citec-47)
+- Twitter: [@NdonyiMaurice](https://twitter.com/Ndonyi4)
+- LinkedIn: [NdonyiMaurice](https://www.linkedin.com/in/ndonyi-maurice-b5b49b22b/)
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **[User_Registration_and_Authentication]**
+- [ ] **[Integrate_with_third-party_space_agencies]**
+
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+> Contributions, issues, and feature requests are welcome!
+
+> Feel free to check the [issues page](https://github.com/0sugo/Space-Travelers-Hub/issues).
+
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> If you like this project, kindly leave a comment below and share it with someone who enjoys coding! Coding is all about continuous learning and allowing yourself to be a beginner at first attempt. Keep going! 
+
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> I'm thankful to Microverse for providing a study platform which guided me through this project and to my coding partners at Microverse for the collaborative effort. 
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+> This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
