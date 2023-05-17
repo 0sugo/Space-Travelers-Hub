@@ -4,6 +4,7 @@ import { reserve } from '../redux/rocket/rocketSlice';
 
 const Rocket = () => {
   const { rockets } = useSelector((store) => store.allRockets);
+
   const dispatch = useDispatch();
   const [reserved, setReserved] = useState('Reserve Rocket');
 
@@ -12,7 +13,7 @@ const Rocket = () => {
     dispatch(reserve(e.target.id));
     setReserved('Cancel Reserve');
   };
-
+  
   return (
     <table>
       {rockets.map((rocket) => (
