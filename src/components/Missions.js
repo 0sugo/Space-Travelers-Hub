@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   fetchMissions,
-  missionStatus,
+  missionsStatus,
   selectsAllMissions,
 } from '../redux/mission/misionSlice';
 import style from './Missio.module.css';
@@ -19,7 +19,7 @@ const Mission = () => {
   const [reservation, setIsreservation] = useState(false);
 
   const handlemission = (id) => {
-    dispatch(missionStatus(id));
+    dispatch(missionsStatus(id));
     setIsreservation(!reservation);
   };
   return (
