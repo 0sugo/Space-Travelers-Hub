@@ -27,7 +27,7 @@ const rocketSlice = createSlice({
       })
       .addCase(fetchRockets.fulfilled, (state, action) => {
         state.isLoading = false;
-        console.log(action.payload);
+        // console.log(action.payload);
         state.rockets = action.payload.map((rocket) => ({
           id: rocket.rocket_id,
           name: rocket.rocket_name,
