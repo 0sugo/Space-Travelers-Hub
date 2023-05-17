@@ -30,6 +30,15 @@ code {
     monospace;
 }
 
+img {
+  aspect-ratio: 3/2;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
 /* .nav-bar */
 .flexer {
   display: flex;
