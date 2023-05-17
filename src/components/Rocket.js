@@ -18,6 +18,7 @@ const Rocket = () => {
             <ul>
               <li><h3>{rocket.name}</h3></li>
               <li><p>{rocket.description}</p></li>
+              <li><button type="button">Reserve Rocket</button></li>
 
             </ul>
           </td>
