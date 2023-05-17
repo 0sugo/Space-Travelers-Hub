@@ -3,7 +3,7 @@ import styles from './Mission.module.css';
 
 function MyMissions({ data }) {
   return (
-    <div className={styles.myMission}>
+    <div className={styles.ourMission}>
       <h2>My Missions</h2>
       <ul>
         {data.map((mission) => (
