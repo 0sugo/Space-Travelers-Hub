@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   fetchMissions,
-  missionsStatus,
+  misionsStatus,
   selectsAllMissions,
 } from '../redux/mission/misionSlice';
 import style from './Missio.module.css';
@@ -18,8 +18,8 @@ const Mission = () => {
   }, [dispatch]);
   const [reservation, setIsreservation] = useState(false);
 
-  const handlemission = (id) => {
-    dispatch(missionsStatus(id));
+  const handlemissions = (id) => {
+    dispatch(misionsStatus(id));
     setIsreservation(!reservation);
   };
   return (
@@ -52,7 +52,7 @@ const Mission = () => {
                 <Button
                   title={mission.reservation ? 'Leave mission' : 'Join Mission'}
                   className={mission.reservation ? style.btn : style.joind}
-                  onReserve={() => handlemission(mission.mission_id)}
+                  onReserve={() => handlemissions(mission.mission_id)}
                 />
               </td>
             </tr>

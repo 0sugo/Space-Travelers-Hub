@@ -19,7 +19,7 @@ const MissionSlice = createSlice({
   name: 'missions',
   initialState: { mission: [], status: 'idle' },
   reducers: {
-    missionsStatus: (state, { payload }) => {
+    misionsStatus: (state, { payload }) => {
       const data = state.mission.map((x) => (x.mission_id === payload ? { ...x, reservation: !x.reservation } : x));
       return {
         ...state,
@@ -57,7 +57,7 @@ const MissionSlice = createSlice({
   },
 });
 
-export const { missionsStatus } = MissionSlice.actions;
+export const { misionsStatus } = MissionSlice.actions;
 export const selectsAllMissions = (state) => state.mission;
 
 export default MissionSlice.reducer;
