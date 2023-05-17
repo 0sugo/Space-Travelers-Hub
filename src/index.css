@@ -29,13 +29,16 @@ code {
     'Courier New',
     monospace;
 }
-img{
+
+img {
   aspect-ratio: 3/2;
   width: 100%;
 }
-li{
+
+li {
   list-style: none;
 }
+
 /* .nav-bar */
 .flexer {
   display: flex;
