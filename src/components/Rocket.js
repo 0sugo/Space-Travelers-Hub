@@ -1,8 +1,18 @@
-// import rocketSlice from '../redux/rocket/rocket.slice';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { useState } from 'react';
+import { reserve } from '../redux/rocket/rocketSlice';
 
 const Rocket = () => {
   const { rockets } = useSelector((store) => store.allRockets);
+
+  const dispatch = useDispatch();
+  const [reserved, setReserved] = useState('Reserve Rocket');
+
+  const handleReserve = (e) => {
+    e.preventDefault();
+    dispatch(reserve(e.target.id));
+    setReserved('Cancel Reserve');
+  };
 
   return (
     <table>
@@ -16,8 +26,13 @@ const Rocket = () => {
           <td>
             <ul>
               <li><h3>{rocket.name}</h3></li>
-              <li><p>{rocket.description}</p></li>
-
+              <li>
+                <p>
+                  {rocket.reserve ? <span className="banner">RESERVED</span> : null }
+                  {rocket.description}
+                </p>
+              </li>
+              <li><button id={rocket.id} type="button" className="reserver" onClick={handleReserve}>{reserved}</button></li>
             </ul>
           </td>
         </tr>
