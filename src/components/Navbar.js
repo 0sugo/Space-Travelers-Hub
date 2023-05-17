@@ -5,7 +5,7 @@ import styles from './Navbar.module.css';
 function Navbar() {
   return (
     <header className={styles.Navbar}>
-      <div className={styles.logos}>
+      <div className={styles.mylogos}>
         <img src={img} alt="planet" />
         <h1>Space Traveler&apos;s Hub</h1>
       </div>
