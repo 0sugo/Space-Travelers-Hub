@@ -5,7 +5,7 @@ import {
   fetchMissions,
   missionStatus,
   selectsAllMissions,
-} from '../redux/mission/missionSlice';
+} from '../redux/mission/misionSlice';
 import style from './Missio.module.css';
 
 import Button from '../missionButton/Boton';
