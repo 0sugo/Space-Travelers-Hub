@@ -10,7 +10,7 @@ function Navbar() {
         <h1>Space Traveler&apos;s Hub</h1>
       </div>
       <nav>
-        <ul className={styles.menus}>
+        <ul className={styles.ourMenu}>
           <li>
             <NavLink
               className={({ isActive }) => (isActive ? styles.active : styles.inActive)}
