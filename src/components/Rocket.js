@@ -13,7 +13,7 @@ const Rocket = () => {
     dispatch(reserve(e.target.id));
     setReserved('Cancel Reserve');
   };
-  
+
   return (
     <table>
       {rockets.map((rocket) => (
