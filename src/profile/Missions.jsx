@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import styles from './MyMission.module.css';
+import styles from './Mission.module.css';
 
 function MyMissions({ data }) {
   return (
