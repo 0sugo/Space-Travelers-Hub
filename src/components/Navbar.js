@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+// import img from '../asset/planet.png';
 
 const Navbar = () => (
   <div className="nav-bar flexer">

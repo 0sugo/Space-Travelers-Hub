@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 
 const Rocket = () => {
   const { rockets } = useSelector((store) => store.allRockets);
-  //   console.log({rockets.flickr_images})
 
   return (
     <table>
