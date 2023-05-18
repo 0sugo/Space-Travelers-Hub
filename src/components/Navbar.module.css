@@ -7,34 +7,34 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.mylogos {
+.logos {
   display: flex;
   align-items: center;
 }
 
-.mylogos img {
+.logos img {
   width: 50px;
   height: 50px;
   margin-right: 1rem;
 }
 
-.mylogos h1 {
+.logos h1 {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
 }
 
-.ourMenu {
+.menus {
   display: flex;
   align-items: center;
 }
 
-.ourMenu li a {
+.menus li a {
   margin-right: 1rem;
   cursor: pointer;
 }
 
-.ourMenu li a:hover {
+.menus li a:hover {
   color: #0388eec0;
   text-decoration: underline;
 }
@@ -52,24 +52,24 @@
     padding: 0.7em 4em;
   }
 
-  .mylogos img {
+  .logos img {
     width: 70px;
     height: 70px;
   }
 
-  .mylogos h1 {
+  .logos h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
   }
 
-  .ourMenu li a {
+  .menus li a {
     margin-right: 1rem;
     font-size: 1.1rem;
     letter-spacing: 1px;
   }
 
-  .ourMenu li:last-child a {
+  .menus li:last-child a {
     margin-right: 0;
     border-left: 2px solid #08325363;
     padding-left: 1rem;
