@@ -5,12 +5,12 @@ import styles from './Navbar.module.css';
 function Navbar() {
   return (
     <header className={styles.Navbar}>
-      <div className={styles.mylogos}>
+      <div className={styles.logos}>
         <img src={img} alt="planet" />
         <h1>Space Traveler&apos;s Hub</h1>
       </div>
       <nav>
-        <ul className={styles.ourMenu}>
+        <ul className={styles.menus}>
           <li>
             <NavLink
               className={({ isActive }) => (isActive ? styles.active : styles.inActive)}
