@@ -4,6 +4,12 @@
   --color-accent: #0290ff;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
