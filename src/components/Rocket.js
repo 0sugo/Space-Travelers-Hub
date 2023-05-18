@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
-import { reserve } from '../redux/rocket/rocketSlice';
+import { reserve, removeReserve } from '../redux/rocket/rocketSlice';
 
 const Rocket = () => {
   const { rockets } = useSelector((store) => store.allRockets);
@@ -10,8 +10,13 @@ const Rocket = () => {
 
   const handleReserve = (e) => {
     e.preventDefault();
-    dispatch(reserve(e.target.id));
-    setReserved('Cancel Reserve');
+    if (reserved === 'Reserve Rocket') {
+      dispatch(reserve(e.target.id));
+      setReserved('Cancel Reserve');
+    } else {
+      dispatch(removeReserve(e.target.id));
+    //   setReserved('Reserve Rocket');
+    }
   };
 
   return (
