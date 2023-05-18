@@ -1,21 +1,19 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { useState } from 'react';
 import { reserve, removeReserve } from '../redux/rocket/rocketSlice';
 
 const Rocket = () => {
   const { rockets } = useSelector((store) => store.allRockets);
 
   const dispatch = useDispatch();
-  const [reserved, setReserved] = useState('Reserve Rocket');
 
   const handleReserve = (e) => {
     e.preventDefault();
-    if (reserved === 'Reserve Rocket') {
-      dispatch(reserve(e.target.id));
-      setReserved('Cancel Reserve');
+    const rocketId = e.target.id;
+    const rocket = rockets.find((rocket) => rocket.id === rocketId);
+    if (rocket.reserve) {
+      dispatch(removeReserve(rocketId));
     } else {
-      dispatch(removeReserve(e.target.id));
-    //   setReserved('Reserve Rocket');
+      dispatch(reserve(rocketId));
     }
   };
 
@@ -37,7 +35,7 @@ const Rocket = () => {
                   {rocket.description}
                 </p>
               </li>
-              <li><button id={rocket.id} type="button" className="reserver" onClick={handleReserve}>{reserved}</button></li>
+              <li><button id={rocket.id} type="button" className="reserver" onClick={handleReserve}>{rocket.reserve ? 'Cancel Reservation' : 'Reserve Rocket'}</button></li>
             </ul>
           </td>
         </tr>
