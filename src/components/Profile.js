@@ -10,7 +10,7 @@ function Profile() {
   const joinMission = mission.filter((mission) => mission.reservation === true);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.mycontainer}>
       <MyMissions data={joinMission} />
     </div>
   );

@@ -1,12 +1,44 @@
 import { NavLink } from 'react-router-dom';
-// import img from '../asset/planet.png';
+import img from '../asset/planet.png';
+import styles from './Navbar.module.css';
 
-const Navbar = () => (
-  <div className="nav-bar flexer">
-    <NavLink to="/">Rockets</NavLink>
-    <NavLink to="Missions">Missions</NavLink>
-    <NavLink to="Profile">My Profile</NavLink>
-  </div>
-);
+function Navbar() {
+  return (
+    <header className={styles.Navbar}>
+      <div className={styles.mylogos}>
+        <img src={img} alt="planet" />
+        <h1>Space Traveler&apos;s Hub</h1>
+      </div>
+      <nav>
+        <ul className={styles.ourMenu}>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? styles.active : styles.inActive)}
+              to="/"
+            >
+              Rockets
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? styles.active : styles.inActive)}
+              to="/Missions"
+            >
+              Missions
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? styles.active : styles.itsActive)}
+              to="/Profile"
+            >
+              My Profile
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
 
 export default Navbar;
