@@ -12,6 +12,7 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
+    - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -93,6 +94,20 @@ To run the project, execute the following command:
 - run ```npm start``` to launch the application
 - enjoy application
 
+
+### Run tests
+
+To run tests, run the following command:
+
+- run ```npm test``` to launch the application
+- enjoy green checkmarks
+<!--
+Example command:
+
+```sh
+  bin/rails test test/models/article_test.rb
+```
+--->
 
 <!-- AUTHORS -->
 
