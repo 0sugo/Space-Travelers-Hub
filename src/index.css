@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+  --color-accent: #0290ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -56,16 +68,40 @@ li {
   text-decoration: underline;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
-
-:root {
-  --color-accent: #0290ff;
+/* rockets */
+td {
+  letter-spacing: 0.03em;
+  line-height: 26px;
+  font-size: 20px;
 }
 
-* {
-  padding: 0;
+.reserver {
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 2%;
+  display: inline-flex;
   margin: 0;
-  box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.banner {
+  background-color: #0290ff;
+  padding: 1%;
+  color: #fff;
+  position: relative;
+  display: inline-flex;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 ul {
