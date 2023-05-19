@@ -7,7 +7,6 @@ const url = 'https://api.spacexdata.com/v3/rockets';
 export const fetchRockets = createAsyncThunk('rockets/getter', async () => {
   try {
     const response = await axios(url);
-    // console.log(response.data);
     return response.data;
   } catch (error) {
     return ('Found this error', error);
