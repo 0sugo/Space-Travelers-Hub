@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Profile components renders correctly 1`] = `
+<div
+  className="profiler"
+>
+  <table
+    className="profiler-table"
+  >
+    <th>
+      My Missions
+    </th>
+  </table>
+  <table
+    className="profiler-table"
+  >
+    <th>
+      My Rockets
+    </th>
+  </table>
+</div>
+`;
