@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import styles from './Mission.module.css';
 
 function MyMissions({ data }) {
@@ -13,5 +13,5 @@ function MyMissions({ data }) {
     </div>
   );
 }
-
+MyMissions.propTypes = { data: PropTypes.arrayOf(PropTypes.string).isRequired };
 export default MyMissions;
