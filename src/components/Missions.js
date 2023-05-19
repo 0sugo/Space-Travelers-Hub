@@ -13,9 +13,13 @@ import Button from './missionButton/Boton';
 const Mission = () => {
   const { mission } = useSelector(selectsAllMissions);
   const dispatch = useDispatch();
+
   React.useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
+    if (mission.length === 0) {
+      dispatch(fetchMissions());
+    }
+  }, [dispatch, Mission]);
+
   const [reservation, setIsreservation] = useState(false);
 
   const handlemissions = (id) => {
