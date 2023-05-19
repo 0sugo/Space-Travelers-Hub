@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
 import { useSelector } from 'react-redux';
-import { useEffect } from 'react';
 import MyMissions from './Mission/Missions';
 import styles from './Profiless.module.css';
 import { selectsAllMissions } from '../redux/mission/misionSlice';
