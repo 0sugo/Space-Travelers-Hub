@@ -45,23 +45,6 @@ li {
   list-style: none;
 }
 
-/* .nav-bar */
-.flexer {
-  display: flex;
-}
-
-.nav-bar {
-  justify-content: space-between;
-}
-
-.nav-bar a {
-  text-decoration: none;
-}
-
-.nav-bar a.active {
-  text-decoration: underline;
-}
-
 /* rockets */
 td {
   letter-spacing: 0.03em;
