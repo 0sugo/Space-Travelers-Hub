@@ -8,7 +8,7 @@ import {
 } from '../redux/mission/misionSlice';
 import style from './mission.module.css';
 
-import Button from '../missionButton/Boton';
+import Button from './missionButton/Boton';
 
 const Mission = () => {
   const { mission } = useSelector(selectsAllMissions);
