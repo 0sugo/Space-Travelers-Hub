@@ -1,5 +1,4 @@
-/* eslint-disable import/extensions */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   fetchMissions,
@@ -7,18 +6,17 @@ import {
   selectsAllMissions,
 } from '../redux/mission/misionSlice';
 import style from './mission.module.css';
-
 import Button from './missionButton/Boton';
 
 const Mission = () => {
   const { mission } = useSelector(selectsAllMissions);
   const dispatch = useDispatch();
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (mission.length === 0) {
       dispatch(fetchMissions());
     }
-  }, [dispatch, Mission]);
+  }, [dispatch, mission.length]);
 
   const [reservation, setIsreservation] = useState(false);
 
