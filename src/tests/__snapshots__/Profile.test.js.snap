@@ -2,16 +2,21 @@
 
 exports[`Test Profile components renders correctly 1`] = `
 <div
-  className="mycontainer"
+  className="profiler"
 >
-  <div
-    className="ourMission"
+  <table
+    className="profiler-table"
   >
-    <h2>
+    <th>
       My Missions
-    </h2>
-    <ul />
-  </div>
-  <table />
+    </th>
+  </table>
+  <table
+    className="profiler-table"
+  >
+    <th>
+      My Rockets
+    </th>
+  </table>
 </div>
 `;

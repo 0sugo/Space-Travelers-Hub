@@ -39,7 +39,11 @@
   text-decoration: underline;
 }
 
-.active {
+.menus li a.active {
+  text-decoration: underline;
+}
+
+.menus li a:active {
   text-decoration: underline;
 }
 
@@ -67,6 +71,8 @@
     margin-right: 1rem;
     font-size: 1.1rem;
     letter-spacing: 1px;
+    text-decoration: none;
+    color: #0290ff;
   }
 
   .menus li:last-child a {

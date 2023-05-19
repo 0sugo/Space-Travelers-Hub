@@ -4,21 +4,22 @@
   margin-top: 2rem;
 }
 
-table,
-td,
-th {
-  border: 1px solid;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
+}
+
+th {
+  border: 1px solid gray;
+  text-align: start;
+  padding-left: 9px;
 }
 
 .title {
   width: 10%;
   padding-left: 10px;
   font-weight: 700;
+  border: 1px solid gray;
 }
 
 .desc {
@@ -26,6 +27,7 @@ table {
   width: 60%;
   font-weight: 450;
   font-size: small;
+  border: 1px solid gray;
 }
 
 .stutus {
@@ -36,6 +38,7 @@ table {
   display: table-cell;
   vertical-align: inherit;
   text-align: center;
+  border: 1px solid gray;
 }
 
 .but_join {
@@ -76,4 +79,5 @@ table {
 
 .white {
   background-color: white;
+  border: 1px solid gray;
 }

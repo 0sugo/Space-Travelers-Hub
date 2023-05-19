@@ -1,6 +1,14 @@
-.mycontainer {
+.profiler {
   display: flex;
-  max-width: 968px;
-  width: 100%;
-  margin: 0 auto;
+  width: 70%;
+  gap: 10%;
+  margin-top: 24px;
+}
+
+.profilertable {
+  border: 1px solid gray;
+}
+
+.tabledata {
+  padding: 3% !important;
 }

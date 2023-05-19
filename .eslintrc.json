@@ -16,8 +16,10 @@
     "plugins": ["react"],
     "rules": {
       "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+      "react-hooks/exhaustive-deps":"off",
       "react/react-in-jsx-scope": "off",
       "import/no-unresolved": "off",
+      "camelcase":"off",
       "max-len":"off",
       "no-shadow": "off"
     },

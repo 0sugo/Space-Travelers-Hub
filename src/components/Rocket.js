@@ -18,16 +18,16 @@ const Rocket = () => {
   };
 
   return (
-    <table>
+    <table className="rockets-table">
       {rockets.map((rocket) => (
-        <tr key={rocket.id}>
+        <tr key={rocket.id} className="rocket-element">
           <td>
             {rocket.flickr_images.length > 0 && (
               <img src={rocket.flickr_images[0]} alt="Rocket" />
             )}
           </td>
-          <td>
-            <ul>
+          <td className="rockets-unset">
+            <ul className="meta-data">
               <li><h3>{rocket.name}</h3></li>
               <li>
                 <p>
@@ -35,7 +35,7 @@ const Rocket = () => {
                   {rocket.description}
                 </p>
               </li>
-              <li><button id={rocket.id} type="button" className="reserver" onClick={handleReserve}>{rocket.reserve ? 'Cancel Reservation' : 'Reserve Rocket'}</button></li>
+              <li><button id={rocket.id} type="button" className={rocket.reserve ? 'reserver inverse' : 'reserver'} onClick={handleReserve}>{rocket.reserve ? 'Cancel Reservation' : 'Reserve Rocket'}</button></li>
             </ul>
           </td>
         </tr>
