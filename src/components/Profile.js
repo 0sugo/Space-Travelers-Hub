@@ -12,7 +12,7 @@ function Profile() {
   const reservedRockets = rockets.filter((rocket) => rocket.reserve === true);
 
   return (
-    <div className={styles.mycontainer}>
+    <div className={styles.profiler}>
       <MyMissions data={joinMission} />
       <ReservedRockets reservedRockets={reservedRockets} />
     </div>
